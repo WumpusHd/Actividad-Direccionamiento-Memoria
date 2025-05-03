@@ -11,7 +11,7 @@ int main() {
     
     int *ptr = arr;
     for(int i = 0; i < 5; i++) {
-        *(ptr + i) *= 2; // Duplica cada elemento
+        *(ptr + i) *= 2;
     }
     
     printf("Dirección del array: %p\n", arr);
