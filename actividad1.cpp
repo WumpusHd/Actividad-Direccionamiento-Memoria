@@ -7,15 +7,15 @@ Implementación Actividad 1*/
 #include <cstdio>
 
 int main() {
-    int num = 10;
-    printf("Valor inicial: %d\n", num);
-    printf("Dirección de memoria: %p\n", &num);
-    
-    int *ptr = &num;
-    *ptr = 20;
-    
-    printf("Nuevo valor: %d\n", num);
-    printf("Dirección de memoria (misma): %p\n", &num);
-    
+    //Actividad 1
+    printf("---ACTIVIDAD 1---");
+    int x = 10;
+    printf("\nEl valor de x es %d\n", x);
+    printf("Dirección de x %p\n", &x);
+
+    int* p = &x;
+    *p = 4;
+    printf("Nuevo valor de x %d\n", x);
     return 0;
 }
+

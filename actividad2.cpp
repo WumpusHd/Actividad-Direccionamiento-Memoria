@@ -7,17 +7,19 @@ Implementación Actividad 2*/
 #include <cstdio>
 
 int main() {
+    //Actividad 2
+    printf("---ACTIVIDAD 2---\n");
     int var = 5;
-    int *ptr = &var;
-    *ptr = 10;
+    int* p1 = &var;
+
+    printf("El valor de var es %d\n", var);
+    printf("Dirección de var %p\n", &var);
     
     int &ref = var;
-    ref = 15;
+    ref +=1;
     
-    printf("Dirección del puntero: %p\n", &ptr);
-    printf("Dirección a la que apunta: %p\n", ptr);
-    printf("Dirección de la referencia: %p\n", &ref);
-    printf("Dirección de la variable original: %p\n", &var);
-    
+    printf("El valor de var es %d\n", var);
+    printf("El valor de ref es %d\n",ref);
     return 0;
 }
+
